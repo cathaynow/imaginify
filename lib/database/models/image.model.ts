@@ -38,6 +38,7 @@ const ImageSchema = new Schema({
   updatedAt: { type: Date, default: Date.now },
 });
 
+// 스키마 존재여부 확인, 존재하지않으면 생성
 const Image = models?.Image || model("Image", ImageSchema);
 
 export default Image;
